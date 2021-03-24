@@ -17,10 +17,10 @@ class App extends Component {
   increment = this.makeIncrementer(1);
 
   render() {
-    const { items } = this.state;
+    const { count } = this.state;
     return (
       <div>
-        <p>Count: {items.count}</p>
+        <p>Count: {count}</p>
         <button type="button" className="increment" onClick={this.increment}>
           Increment count
         </button>
